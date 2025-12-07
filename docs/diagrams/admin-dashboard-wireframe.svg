@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="650" xmlns="http://www.w3.org/2000/svg">
+  <!-- White Background -->
+  <rect width="1000" height="650" fill="#ffffff"/>
+  
+  <text x="500" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Admin Dashboard - UI Wireframe</text>
+  
+  <rect x="50" y="50" width="900" height="570" fill="#fff" stroke="#000" stroke-width="2"/>
+  <rect x="50" y="50" width="900" height="30" fill="#fff" stroke="#000" stroke-width="2"/>
+  <circle cx="70" cy="65" r="5" fill="#000"/>
+  <circle cx="90" cy="65" r="5" fill="#000"/>
+  <circle cx="110" cy="65" r="5" fill="#000"/>
+  
+  <rect x="50" y="80" width="900" height="50" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="80" y="110" font-family="Arial" font-size="16" font-weight="bold" fill="#000">🏠 Campus Trade Hub</text>
+  <text x="280" y="110" font-family="Arial" font-size="14" fill="#000">Admin Dashboard</text>
+  <text x="800" y="110" font-family="Arial" font-size="13" fill="#000">👤 System Admin</text>
+  
+  <rect x="50" y="130" width="900" height="40" fill="#fff" stroke="#000" stroke-width="2"/>
+  <rect x="70" y="140" width="150" height="20" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="145" y="154" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">📊 System Stats</text>
+  <rect x="230" y="140" width="160" height="20" fill="#fff" stroke="#000"/>
+  <text x="310" y="154" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">👥 User Management</text>
+  <rect x="400" y="140" width="160" height="20" fill="#fff" stroke="#000"/>
+  <text x="480" y="154" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">📦 Item Management</text>
+  
+  <rect x="70" y="190" width="860" height="410" fill="#fff" stroke="#000"/>
+  <text x="90" y="220" font-family="Arial" font-size="18" font-weight="bold">System Statistics</text>
+  
+  <rect x="90" y="240" width="190" height="100" fill="#fff" stroke="#000" stroke-width="2" rx="8"/>
+  <text x="185" y="265" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Total Users</text>
+  <text x="185" y="300" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#000">5</text>
+  <text x="185" y="325" font-family="Arial" font-size="11" text-anchor="middle" fill="#000">Today: +5</text>
+  
+  <rect x="300" y="240" width="190" height="100" fill="#fff" stroke="#000" stroke-width="2" rx="8"/>
+  <text x="395" y="265" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Total Items</text>
+  <text x="395" y="300" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#000">17</text>
+  
+  <rect x="510" y="240" width="190" height="100" fill="#fff" stroke="#000" stroke-width="2" rx="8"/>
+  <text x="605" y="265" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Available Items</text>
+  <text x="605" y="300" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#000">17</text>
+  
+  <rect x="720" y="240" width="190" height="100" fill="#fff" stroke="#000" stroke-width="2" rx="8"/>
+  <text x="815" y="265" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Sold Items</text>
+  <text x="815" y="300" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#000">0</text>
+  
+  <rect x="90" y="360" width="820" height="220" fill="#fff" stroke="#000" stroke-width="2" rx="8"/>
+  <text x="110" y="390" font-family="Arial" font-size="14" font-weight="bold">Quick Actions & System Info</text>
+  <line x1="110" y1="405" x2="890" y2="405" stroke="#E5E7EB"/>
+  
+  <rect x="120" y="420" width="200" height="35" fill="#fff" stroke="#000" stroke-width="2" rx="5"/>
+  <text x="220" y="443" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">View All Users</text>
+  
+  <rect x="340" y="420" width="200" height="35" fill="#fff" stroke="#000" stroke-width="2" rx="5"/>
+  <text x="440" y="443" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">View All Items</text>
+  
+  <rect x="560" y="420" width="200" height="35" fill="#fff" stroke="#000" stroke-width="2" rx="5"/>
+  <text x="660" y="443" font-family="Arial" font-size="12" text-anchor="middle" fill="#000">Edit Privacy Policy</text>
+  
+  <text x="120" y="490" font-family="Arial" font-size="11" fill="#666">📊 Database Status: Connected | 💾 Storage: 2.3 MB</text>
+  <text x="120" y="510" font-family="Arial" font-size="11" fill="#666">🔐 Security: JWT Enabled | ⚡ Performance: Good</text>
+  <text x="120" y="530" font-family="Arial" font-size="11" fill="#666">🌐 Server: Running on Heroku | ⏰ Uptime: 99.5%</text>
+</svg>

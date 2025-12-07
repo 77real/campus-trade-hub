@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: campus-trade-hub
+  
+  datasource:
+    url: jdbc:mysql://localhost:3306/campustradehub?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: whd200114
+  
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+  
+  sql:
+    init:
+      mode: never
+  
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 8080
+  error:
+    include-message: always
+
+jwt:
+  secret: campusTrdeHubSecretKeyForJWTTokenGenerationAndValidation2024
+  expiration: 86400000
+
+cors:
+  allowed-origins: http://localhost:5173,http://localhost:5174,http://localhost:3000

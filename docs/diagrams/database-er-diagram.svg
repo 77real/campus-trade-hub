@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- White Background -->
+  <rect width="900" height="700" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#000">
+    Database Entity-Relationship Diagram
+  </text>
+  
+  <!-- Users Table -->
+  <g id="users">
+    <rect x="50" y="80" width="200" height="200" fill="#fff" stroke="#000" stroke-width="2"/>
+    <rect x="50" y="80" width="200" height="30" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="150" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">USERS</text>
+    
+    <text x="60" y="125" font-family="Arial, sans-serif" font-size="11" fill="#000">🔑 id: BIGINT (PK)</text>
+    <text x="60" y="145" font-family="Arial, sans-serif" font-size="11" fill="#000">📧 email: VARCHAR(255) UK</text>
+    <text x="60" y="165" font-family="Arial, sans-serif" font-size="11" fill="#000">🔒 password: VARCHAR(255)</text>
+    <text x="60" y="185" font-family="Arial, sans-serif" font-size="11" fill="#000">👤 username: VARCHAR(100)</text>
+    <text x="60" y="205" font-family="Arial, sans-serif" font-size="11" fill="#000">📱 phone: VARCHAR(20)</text>
+    <text x="60" y="225" font-family="Arial, sans-serif" font-size="11" fill="#000">⭐ reputation_score: INT</text>
+    <text x="60" y="245" font-family="Arial, sans-serif" font-size="11" fill="#000">✓ is_verified: BOOLEAN</text>
+    <text x="60" y="265" font-family="Arial, sans-serif" font-size="11" fill="#000">👔 role: VARCHAR(20)</text>
+  </g>
+  
+  <!-- Items Table -->
+  <g id="items">
+    <rect x="350" y="80" width="220" height="230" fill="#fff" stroke="#000" stroke-width="2"/>
+    <rect x="350" y="80" width="220" height="30" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="460" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">ITEMS</text>
+    
+    <text x="360" y="125" font-family="Arial, sans-serif" font-size="11" fill="#000">🔑 id: BIGINT (PK)</text>
+    <text x="360" y="145" font-family="Arial, sans-serif" font-size="11" fill="#000">📝 title: VARCHAR(255)</text>
+    <text x="360" y="165" font-family="Arial, sans-serif" font-size="11" fill="#000">📄 description: TEXT</text>
+    <text x="360" y="185" font-family="Arial, sans-serif" font-size="11" fill="#000">💰 price: DECIMAL(10,2)</text>
+    <text x="360" y="205" font-family="Arial, sans-serif" font-size="11" fill="#000">📂 category: VARCHAR(50)</text>
+    <text x="360" y="225" font-family="Arial, sans-serif" font-size="11" fill="#000">📍 location: VARCHAR(255)</text>
+    <text x="360" y="245" font-family="Arial, sans-serif" font-size="11" fill="#000">🖼️ image_urls: TEXT</text>
+    <text x="360" y="265" font-family="Arial, sans-serif" font-size="11" fill="#000">📊 status: VARCHAR(20)</text>
+    <text x="360" y="285" font-family="Arial, sans-serif" font-size="11" fill="#000">🔗 user_id: BIGINT (FK)</text>
+    <text x="360" y="300" font-family="Arial, sans-serif" font-size="10" fill="#666">📅 created_at, updated_at</text>
+  </g>
+  
+  <!-- Categories Table -->
+  <g id="categories">
+    <rect x="650" y="80" width="200" height="100" fill="#fff" stroke="#000" stroke-width="2"/>
+    <rect x="650" y="80" width="200" height="30" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="750" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">CATEGORIES</text>
+    
+    <text x="660" y="125" font-family="Arial, sans-serif" font-size="11" fill="#000">🔑 id: BIGINT (PK)</text>
+    <text x="660" y="145" font-family="Arial, sans-serif" font-size="11" fill="#000">📛 name: VARCHAR(100) UK</text>
+    <text x="660" y="165" font-family="Arial, sans-serif" font-size="11" fill="#000">📄 description: TEXT</text>
+  </g>
+  
+  <!-- Messages Table -->
+  <g id="messages">
+    <rect x="50" y="350" width="220" height="170" fill="#fff" stroke="#000" stroke-width="2"/>
+    <rect x="50" y="350" width="220" height="30" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="160" y="370" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">MESSAGES</text>
+    
+    <text x="60" y="395" font-family="Arial, sans-serif" font-size="11" fill="#000">🔑 id: BIGINT (PK)</text>
+    <text x="60" y="415" font-family="Arial, sans-serif" font-size="11" fill="#000">👤 sender_id: BIGINT (FK)</text>
+    <text x="60" y="435" font-family="Arial, sans-serif" font-size="11" fill="#000">👤 receiver_id: BIGINT (FK)</text>
+    <text x="60" y="455" font-family="Arial, sans-serif" font-size="11" fill="#000">📦 item_id: BIGINT (FK)</text>
+    <text x="60" y="475" font-family="Arial, sans-serif" font-size="11" fill="#000">💬 content: TEXT</text>
+    <text x="60" y="495" font-family="Arial, sans-serif" font-size="11" fill="#000">✓ is_read: BOOLEAN</text>
+    <text x="60" y="510" font-family="Arial, sans-serif" font-size="10" fill="#666">📅 created_at</text>
+  </g>
+  
+  <!-- Favorites Table -->
+  <g id="favorites">
+    <rect x="350" y="370" width="220" height="130" fill="#fff" stroke="#000" stroke-width="2"/>
+    <rect x="350" y="370" width="220" height="30" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="460" y="390" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">FAVORITES</text>
+    
+    <text x="360" y="415" font-family="Arial, sans-serif" font-size="11" fill="#000">🔑 id: BIGINT (PK)</text>
+    <text x="360" y="435" font-family="Arial, sans-serif" font-size="11" fill="#000">👤 user_id: BIGINT (FK)</text>
+    <text x="360" y="455" font-family="Arial, sans-serif" font-size="11" fill="#000">📦 item_id: BIGINT (FK)</text>
+    <text x="360" y="475" font-family="Arial, sans-serif" font-size="11" fill="#000">📅 created_at: TIMESTAMP</text>
+    <text x="360" y="490" font-family="Arial, sans-serif" font-size="10" fill="#666">UK: (user_id, item_id)</text>
+  </g>
+  
+  <!-- System Settings Table -->
+  <g id="system_settings">
+    <rect x="650" y="230" width="220" height="150" fill="#fff" stroke="#000" stroke-width="2"/>
+    <rect x="650" y="230" width="220" height="30" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="760" y="250" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">SYSTEM_SETTINGS</text>
+    
+    <text x="660" y="275" font-family="Arial, sans-serif" font-size="11" fill="#000">🔑 id: BIGINT (PK)</text>
+    <text x="660" y="295" font-family="Arial, sans-serif" font-size="11" fill="#000">🔑 setting_key: VARCHAR(255) UK</text>
+    <text x="660" y="315" font-family="Arial, sans-serif" font-size="11" fill="#000">📄 setting_value: TEXT</text>
+    <text x="660" y="335" font-family="Arial, sans-serif" font-size="11" fill="#000">📝 description: VARCHAR(500)</text>
+    <text x="660" y="355" font-family="Arial, sans-serif" font-size="11" fill="#000">📅 updated_at: TIMESTAMP</text>
+    <text x="660" y="370" font-family="Arial, sans-serif" font-size="10" fill="#666">e.g., PRIVACY_POLICY</text>
+  </g>
+  
+  <!-- Relationships -->
+  <!-- Users to Items (1:N) -->
+  <line x1="250" y1="180" x2="350" y2="180" stroke="#000" stroke-width="2"/>
+  <text x="270" y="175" font-family="Arial, sans-serif" font-size="10" fill="#000">1</text>
+  <text x="330" y="175" font-family="Arial, sans-serif" font-size="10" fill="#000">N</text>
+  <text x="290" y="175" font-family="Arial, sans-serif" font-size="10" fill="#666">owns</text>
+  
+  <!-- Items to Categories (N:1) -->
+  <line x1="570" y1="130" x2="650" y2="130" stroke="#000" stroke-width="2"/>
+  <text x="580" y="125" font-family="Arial, sans-serif" font-size="10" fill="#000">N</text>
+  <text x="630" y="125" font-family="Arial, sans-serif" font-size="10" fill="#000">1</text>
+  <text x="600" y="125" font-family="Arial, sans-serif" font-size="10" fill="#666">belongs to</text>
+  
+  <!-- Users to Messages sender (1:N) -->
+  <line x1="150" y1="280" x2="160" y2="350" stroke="#000" stroke-width="2"/>
+  <text x="125" y="310" font-family="Arial, sans-serif" font-size="10" fill="#000">1</text>
+  <text x="145" y="340" font-family="Arial, sans-serif" font-size="10" fill="#000">N</text>
+  <text x="100" y="320" font-family="Arial, sans-serif" font-size="10" fill="#666">sends</text>
+  
+  <!-- Items to Messages (1:N) -->
+  <line x1="460" y1="310" x2="270" y2="400" stroke="#000" stroke-width="2"/>
+  <text x="430" y="320" font-family="Arial, sans-serif" font-size="10" fill="#000">1</text>
+  <text x="280" y="395" font-family="Arial, sans-serif" font-size="10" fill="#000">N</text>
+  <text x="360" y="355" font-family="Arial, sans-serif" font-size="10" fill="#666">about</text>
+  
+  <!-- Users to Favorites (1:N) -->
+  <line x1="150" y1="280" x2="350" y2="430" stroke="#000" stroke-width="2"/>
+  <text x="160" y="310" font-family="Arial, sans-serif" font-size="10" fill="#000">1</text>
+  <text x="330" y="425" font-family="Arial, sans-serif" font-size="10" fill="#000">N</text>
+  <text x="240" y="350" font-family="Arial, sans-serif" font-size="10" fill="#666">favorites</text>
+  
+  <!-- Items to Favorites (1:N) -->
+  <line x1="460" y1="310" x2="460" y2="370" stroke="#000" stroke-width="2"/>
+  <text x="470" y="330" font-family="Arial, sans-serif" font-size="10" fill="#000">1</text>
+  <text x="470" y="360" font-family="Arial, sans-serif" font-size="10" fill="#000">N</text>
+  <text x="475" y="340" font-family="Arial, sans-serif" font-size="10" fill="#666">favorited by</text>
+  
+  <!-- Legend -->
+  <g id="legend">
+    <text x="50" y="560" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#000">Legend:</text>
+    <text x="50" y="580" font-family="Arial, sans-serif" font-size="11" fill="#000">🔑 = Primary Key (PK)</text>
+    <text x="200" y="580" font-family="Arial, sans-serif" font-size="11" fill="#000">🔗 = Foreign Key (FK)</text>
+    <text x="350" y="580" font-family="Arial, sans-serif" font-size="11" fill="#000">UK = Unique Key</text>
+    <text x="50" y="600" font-family="Arial, sans-serif" font-size="11" fill="#000">1:N = One-to-Many relationship</text>
+    <text x="300" y="600" font-family="Arial, sans-serif" font-size="11" fill="#000">N:1 = Many-to-One relationship</text>
+    
+    <text x="50" y="630" font-family="Arial, sans-serif" font-size="10" fill="#666">
+      Note: CASCADE DELETE applied on foreign keys to maintain referential integrity
+    </text>
+  </g>
+  
+  <!-- Database Info -->
+  <text x="450" y="670" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#666">
+    MySQL 8.0 | InnoDB Engine | UTF-8MB4 Charset | 3NF Normalization
+  </text>
+</svg>

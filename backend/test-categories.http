@@ -1,0 +1,2 @@
+### Test Categories API
+GET http://localhost:8080/api/categories
